@@ -1,0 +1,194 @@
+:root{
+    --primary-green-lighter:hsl(148,38%,91%);
+    --primary-green-medium:hsl(169,82%,27%);
+    --primary-red:hsl(0,66%,54%);
+    --neutral-white:hsl(0,0%,100%);
+    --neutral-grey-medium:hsl(186,15%,59%);
+    --neutral-grey-darker:hsl(187,24%,22%);
+    --body-font-size:16px;
+}
+body{
+    width:100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: karla;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-green-lighter);
+}
+form{
+    height: 620px;
+    width:700px;
+    background-color:var(--neutral-white);
+    color: var(--primary-green-medium);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+form h1{
+    color: black;
+    margin: 16px 0px 16px 16px;
+}
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.firstName,.lastName{
+    display: flex;
+    flex-direction: column;
+
+}
+.name{
+    width: 300px;
+    height: 24px;
+    border: 1px solid var(--primary-green-medium);
+    border-radius: 6px;
+    margin: 8px 0 0 0;
+    position: relative;
+}
+.name:hover{
+    cursor: pointer;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 20px;
+   
+}
+.emailFeild{
+    width: 650px;
+    height: 24px;
+    border: 1px solid var(--primary-green-medium);
+    border-radius: 6px;
+    margin: 8px 0 0 0;
+}
+.emailFeild:hover{
+    cursor:pointer;
+}
+.querytype{
+    margin: 8px 0 0px 20px;
+}
+.queryvalue{
+    margin: 20px 0px 8px 0px;
+}
+.query{
+    border: 1px solid var(--primary-green-medium);
+    border-radius: 4px;
+    padding: 10px 170px 10px 10px;
+    margin: 8px 0px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 20px;
+}
+.message textarea{
+    height: 120px;
+    width: 650px;
+    margin: 8px 0px 12px 0px;
+    border-radius: 8px;
+}
+.message textarea:hover{
+    cursor: pointer;
+}
+form button{
+    display: block;
+    margin: auto;
+    border: 1px solid var(--neutral-grey-medium);
+    padding: 18px 308px;
+    border-radius: 8px;
+    background-color: var(--primary-red);
+    font-weight: 600;
+    color: var(--neutral-white);
+}
+.consentSection{
+    margin: 10px 0 40px 20px;
+    position: relative;
+}
+.queryreq{
+    position: relative;
+    top: 10px;
+}
+.consentreq{
+    position: absolute;
+    top: 24px;
+    left: 4px;
+}
+.sendMessage{
+    background-color: var(--neutral-grey-darker);
+    width: 30%;
+    border-radius: 10px;
+    height: 100px;
+    position: absolute;
+    top: 4px;
+    right: 34%;
+}
+.heading{
+    display: flex;
+    margin:0px 0 0 10px ;
+    color:var(--neutral-white);
+}
+.heading h3{
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
+.sendMessage p{
+    margin: 0px 0 0 10px;
+    color: var(--primary-green-medium);
+}
+.hidden{
+    display: none;
+}
+@media only screen and (max-width:800px){
+    body{
+        background-color: black;
+    }
+    form{
+        width: 400px;
+        height: 700px;
+    }
+    .userInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .email{
+        margin: 4px 4px;
+    }
+    .emailFeild{
+        width: 300px;
+    }
+    .querytype{
+        margin: 4px 4px;
+    }
+    .queryvalue{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .query{
+        width: 150px;
+    }
+    .message{
+        margin: 4px 4px;
+    }
+    #message{
+        width: 330px;
+        height: 50px;
+    }
+    .consentSection{
+        margin: 4px 4px;
+    }
+   form .submit{
+        padding: 10px 40px;
+        margin-top: 40px;
+    }
+    .sendMessage{
+        width: 50%;
+        opacity: 0.9;
+    }
+
+}
